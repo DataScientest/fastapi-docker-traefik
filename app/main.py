@@ -8,7 +8,7 @@ app = FastAPI(title="FastAPI, Docker, and Traefik")
 
 @app.get("/")
 async def read_root():
-    return await User.objects.all()
+    return {"msg": " BIENVENUE SUR LE PROJET DATASCIENTEST FASTAPI"}
 
 
 @app.on_event("startup")
